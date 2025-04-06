@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-between flex-col h-[100vh]">
+  <!-- <div class="flex justify-between flex-col h-[100vh]">
     <Header />
-    <div>
+    <div> -->
       <slot />
-    </div>
+    <!-- </div>
     <Footer />
-  </div>
+  </div> -->
 </template>

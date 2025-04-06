@@ -4,5 +4,8 @@
 </script>
 
 <template>
-  <Main />
+  <!-- <Main /> -->
+  <div class="flex items-center justify-center">
+    <img class="h-[100vh] w-auto" src="/public/images/base.svg" alt="Icon" />
+  </div>
 </template>
