@@ -5,7 +5,7 @@
 
 <template>
   <!-- <Main /> -->
-  <div class="flex items-center justify-center">
-    <img class="h-[100vh] w-auto" src="/public/images/base.svg" alt="Icon" />
+  <div class="flex items-center justify-center h-[100vh]">
+    <img class="w-auto" src="/public/images/base.png" alt="Icon" />
   </div>
 </template>
