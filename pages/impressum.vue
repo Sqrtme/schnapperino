@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center mt-14">
-    <div class="flex items-center justify-center flex-col py-6 rounded-xl bg-slate-50">
+  <div class="flex flex-col items-center mt-0 md:mt-14">
+    <div class="flex items-center justify-center flex-col py-6 rounded-none md:rounded-xl bg-slate-50">
         <NuxtLink to="/" class="w-full flex items-center pl-6">
           <Icon size="24" name="flowbite:arrow-left-outline" style="color: black" />
           <span class="text-sm font-bold">To main</span> 
