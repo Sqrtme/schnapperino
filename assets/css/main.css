@@ -9,3 +9,39 @@ body {
   height: 100vh;
   font-family: 'Roboto', Courier, monospace;
 }
+
+.hover-underline {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+
+  text-align: center;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(black, #ff721f);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline::before {
+  top: 0px;
+  transform-origin: left;
+}
+
+.hover-underline::after {
+  bottom: 0px;
+}
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
