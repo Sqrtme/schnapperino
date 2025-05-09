@@ -1,15 +1,20 @@
 @font-face {
+  font-family: 'Poetsen';
+  src: url('assets/fonts/Poetsen.ttf');
+}
+
+@font-face {
   font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Light.ttf');
+  src: url('assets/fonts/Roboto.ttf');
 }
 
 body {
   background: #ff721f;
   position: relative;
   height: 100vh;
-  font-family: 'Roboto', Courier, monospace;
+  font-family: 'Poetsen', Courier, monospace;
 }
-
+/* 
 .hover-underline {
   cursor: pointer;
   position: relative;
@@ -44,4 +49,13 @@ body {
 .hover-underline:hover::after,
 .hover-underline:hover::before {
   transform: scaleX(1);
+} */
+
+.hover-zoom {
+  transition: transform 0.2s ease-out;
+  line-height: 1.4;
+  &:hover {
+    transform: scale(1.1);
+  }
+
 }

@@ -9,7 +9,7 @@ export default {
         green: '#00885e',
         purple: '#5e0088',
         brown: '#885e00',
-
+        orange: '#ff721f',
       },
       backgroundColor: {
         primary: 'rgb(0, 136, 110)',
