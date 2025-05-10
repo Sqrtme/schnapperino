@@ -951,6 +951,40 @@
     vite-plugin-checker "^0.9.2"
     vue-bundle-renderer "^2.1.1"
 
+"@nuxtjs/robots@^5.2.10":
+  version "5.2.10"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/robots/-/robots-5.2.10.tgz#dc89ad50561ce2c0925328cf8c0227398cffbbc2"
+  integrity sha512-WiO+VA8UwDgVLy7JCrGTrAmSNNw397OuNseKOG051ixswEDd0QhNw4cUtgNd2RkSIL7WlkfwkizdJFCd9y9iXw==
+  dependencies:
+    "@nuxt/kit" "^3.16.2"
+    consola "^3.4.2"
+    defu "^6.1.4"
+    nuxt-site-config "^3.1.9"
+    pathe "^2.0.3"
+    pkg-types "^2.1.0"
+    sirv "^3.0.1"
+    std-env "^3.9.0"
+    ufo "^1.6.1"
+
+"@nuxtjs/sitemap@7.2.10":
+  version "7.2.10"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-7.2.10.tgz#708bdca3fc1c2fc73ba45ecdce7675452df248ea"
+  integrity sha512-7w1Ys2XIE/QVTJn5dbt2p/hrmDoGO9Ay1S3o6LI5M/MDRzKPvnXi5ByRUcc7Sfa3LUpLad5/w4IOQ4lyxhq9Hw==
+  dependencies:
+    "@nuxt/devtools-kit" "^2.3.2"
+    "@nuxt/kit" "^3.16.2"
+    chalk "^5.4.1"
+    defu "^6.1.4"
+    h3-compression "^0.3.2"
+    nuxt-site-config "^3.1.9"
+    ofetch "^1.4.1"
+    pathe "^2.0.3"
+    pkg-types "^2.1.0"
+    radix3 "^1.1.2"
+    semver "^7.7.1"
+    sirv "^3.0.1"
+    ufo "^1.5.4"
+
 "@nuxtjs/tailwindcss@^6.13.1":
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-6.14.0.tgz#c2feffc4ea4f5c4bd8d60218841d8bae84f70271"
@@ -2154,6 +2188,11 @@ chalk@^4.1.2:
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
+
+chalk@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.4.1.tgz#1b48bf0963ec158dce2aacf69c093ae2dd2092d8"
+  integrity sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==
 
 chokidar@^3.6.0:
   version "3.6.0"
@@ -3522,6 +3561,11 @@ gzip-size@^7.0.0:
   dependencies:
     duplexer "^0.1.2"
 
+h3-compression@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/h3-compression/-/h3-compression-0.3.2.tgz#2d5e803a0a51fabf32deb34fa82e108577f6922b"
+  integrity sha512-B+yCKyDRnO0BXSfjAP4tCXJgJwmnKp3GyH5Yh66mY9KuOCrrGQSPk/gBFG2TgH7OyB/6mvqNZ1X0XNVuy0qRsw==
+
 h3@^1.10.0, h3@^1.12.0, h3@^1.15.1, h3@^1.15.2, h3@^1.15.3:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/h3/-/h3-1.15.3.tgz#e242ec6a7692a45caed3e4a73710cede4fb8d863"
@@ -4780,6 +4824,30 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+nuxt-site-config-kit@3.1.9:
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/nuxt-site-config-kit/-/nuxt-site-config-kit-3.1.9.tgz#fcd8d5092061b502f273811124fb80b9677262c5"
+  integrity sha512-bcmpajYJgkNzA0jTq6CmmhKF2wHZUUKeVx/CIGI8lwWuAD81EBUZN0T4iKvVDo54g9UBrUUl8/5GhD65YBBG0A==
+  dependencies:
+    "@nuxt/kit" "^3.16.2"
+    pkg-types "^2.1.0"
+    site-config-stack "3.1.9"
+    std-env "^3.9.0"
+    ufo "^1.5.4"
+
+nuxt-site-config@^3.1.9:
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/nuxt-site-config/-/nuxt-site-config-3.1.9.tgz#8497f3eab293b0e467a87f809e1776ff66b333eb"
+  integrity sha512-YB69GX0st8drv1d5xypweseiEWeR22tfGdyVH3U4R+mpUSz8paBx48ArKC6MgV22DKItoQm51LVoapF5pl5bEQ==
+  dependencies:
+    "@nuxt/kit" "^3.16.2"
+    nuxt-site-config-kit "3.1.9"
+    pathe "^2.0.3"
+    pkg-types "^2.1.0"
+    sirv "^3.0.1"
+    site-config-stack "3.1.9"
+    ufo "^1.5.4"
+
 nuxt@^3.15.2:
   version "3.17.2"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.17.2.tgz#2fbf252f36669cbeecd80c8dcf1a5bdc18ce771f"
@@ -6017,6 +6085,13 @@ sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
+
+site-config-stack@3.1.9:
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/site-config-stack/-/site-config-stack-3.1.9.tgz#efc76ba2bcc86217b3fdf74fe679a8a5044b1ade"
+  integrity sha512-ed53+wLi+36SGqidU+YUpl7f1OHClPLmvUJ/aYZny1dCBnXvOsuFottrMkXDIK2N5UaMED9mz8KrRZTk94ARCg==
+  dependencies:
+    ufo "^1.5.4"
 
 slash@^3.0.0:
   version "3.0.0"

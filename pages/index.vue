@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-start h-[100vh] flex-col">
-    <img class="w-auto" src="/public/images/base.jpg" alt="Icon" />
+    <img class="w-auto" src="/public/images/base.png" alt="Icon" />
       <div class="p-6 max-w-4xl mx-auto">
     <!-- Заголовок с белым текстом -->
     <h1 class="text-2xl font-bold mb-6 text-center text-white opacity-90">Alle unsere Geschäfte sind rund um die Uhr geöffnet 🕒</h1>
@@ -13,7 +13,7 @@
   <footer class="w-full py-4 bg-black mt-6">
     <div class="max-w-4xl mx-auto text-center text-white">
       <div class="mt-2 text-sm">
-        <NuxtLink to="/products" class="text-lg hover:text-orange ">Products</NuxtLink> | 
+        <!-- <NuxtLink to="/products" class="text-lg hover:text-orange ">Products</NuxtLink> |  -->
         <NuxtLink to="/impressum" class="text-lg hover:text-orange">Impressum</NuxtLink>
       </div>
       <p class="mt-2">&copy; 2025 Schnapperino GmbH</p>
@@ -62,7 +62,16 @@ const shops = ref([
   },
 ]);
 useHead(() => ({
-  title: 'Schnapperino'
+  title: 'Schnapperino GmbH - Rund um die Uhr Snacks & Getränke zu fairen Preisen',
+  meta: [
+    { name: 'description', content: 'Schnapperino GmbH bietet Ihnen 24/7 den Zugang zu leckeren Snacks und erfrischenden Getränken - schnell, bequem und preiswert.' },
+    { name: 'keywords', content: 'Schnapperino, Snackautomaten, Getränkeautomaten, 24/7 Automaten, günstige Snacks, günstige Getränke, Verkaufsautomaten, rund um die Uhr' },
+    { property: 'og:title', content: 'Schnapperino GmbH - Rund um die Uhr Snacks & Getränke zu fairen Preise' },
+    { property: 'og:description', content: 'Bei Schnapperino erhalten Sie jederzeit günstige Snacks und Getränke - unsere Automaten stehen 24/7 für Sie bereit.' },
+    { property: 'og:image', content: 'https://schnapperino.com/images/base.png' },
+    { property: 'og:type', content: 'website' },
+    { name: 'robots', content: 'index, follow' }
+  ]
 }))
 definePageMeta({
   layout: 'empty'

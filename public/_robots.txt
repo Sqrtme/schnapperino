@@ -1,0 +1,3 @@
+UserAgent: '*',
+Disallow: '',
+Sitemap: 'https://schnapperino.com/sitemap.xml'
